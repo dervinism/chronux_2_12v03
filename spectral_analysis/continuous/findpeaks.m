@@ -1,6 +1,6 @@
-function xmax=findpeaks(data,threshold)
+function xmax=findpeaksChronux(data,threshold)
 % Helper function to find peaks in a given continuous valued time series x
-% Usage: xmax=findpeaks(data,threshold)
+% Usage: xmax=findpeaksChronux(data,threshold)
 % Input:
 %      data     (data in time x channels/trials form or a single vector)
 %      threshold (if specified returns locations of peaks at which data exceeds threshold) - optional
