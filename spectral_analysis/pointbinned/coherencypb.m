@@ -94,7 +94,11 @@ end
 C12=S12./sqrt(S1.*S2);
 if nf == 1; C12 = C12'; end % MD
 C=abs(C12);
-phi=angle(C12);
+if nf == 1
+  phi=-angle(C12); % MD
+else
+  phi=angle(C12);
+end
 if nargout==10; 
     if fscorr==1; 
        [confC,phistd,Cerr]=coherr(C,J1,J2,err,trialave,Nsp1,Nsp2);
